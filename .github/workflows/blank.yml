@@ -33,3 +33,86 @@
 </div>
 </body>
 </html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AAConnects – Airport Detail</title>
+    css/styles.css
+    js/airport.js</script>
+</head>
+
+<body>
+<div class="container">
+
+    <!-- HEADER -->
+    <div class="header-logo">
+        assets/aa_logo.svg
+        <span>AAConnects</span>
+    </div>
+    <div class="header-subtitle">
+        Airport Weather & ATC Overview
+    </div>
+
+    <!-- AIRPORT TITLE -->
+    <h1 id="airportCode" class="airport-title">---</h1>
+    <h2 id="airportName" class="airport-subtitle"></h2>
+
+    <!-- ALERT BADGE -->
+    <div id="alertBadge" class="badge green" style="margin-top:12px;">Loading...</div>
+    <p id="alertDesc" class="alert-desc"></p>
+
+    <!-- MAIN LAYOUT -->
+    <div class="row">
+
+        <!-- LEFT COLUMN (WEATHER) -->
+        <div class="col">
+            <div class="card">
+                <div class="card-title">Weather</div>
+
+                <!-- VISIBILITY -->
+                <div id="visBadge" class="badge blue">Visibility --</div>
+
+                <!-- WEATHER ROW -->
+                <div class="weather-row">
+                    <div class="weather-info">
+                        <div id="windText">Winds: --</div>
+                        <div id="cloudText">Clouds: --</div>
+                        <div id="wxIcon" class="weather-icon">☀️</div>
+                    </div>
+
+                    <div id="tempText" class="temp-large">--°F</div>
+                </div>
+
+                <!-- OPTIONAL ADVISORY -->
+                <div id="windAdvBadge"
+                     class="badge orange"
+                     style="margin-top:12px; display:none;">
+                    Wind Advisory
+                </div>
+            </div>
+        </div>
+
+        <!-- RIGHT COLUMN (RADAR + ATC) -->
+        <div class="col">
+
+            <!-- RADAR CARD -->
+            <div class="card">
+                <div class="card-title">Radar</div>
+                assets/radar-placeholder.gif
+            </div>
+
+            <!-- ATC ADVISORIES -->
+            <div class="card" style="margin-top:20px;">
+                <div class="card-title">ATC Advisories</div>
+                <div id="atcText">Loading ATC info...</div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+</body>
+</html>
