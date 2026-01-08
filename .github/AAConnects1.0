@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>AAConnects – Airport Status Dashboard</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <div class="container">
+
+    <!-- HEADER -->
+    <header class="site-header">
+      <div class="header-logo">
+        <img src="assets/aa_logo.svg" alt="AAConnects logo" width="48" height="48">
+        <span class="site-title">AAConnects</span>
+      </div>
+      <p class="header-subtitle">
+        Live-style operational overview of AA Hubs &amp; Focus Cities
+      </p>
+    </header>
+
+    <main>
+      <!-- SEARCH BAR -->
+      <form id="searchForm" class="search-box" role="search" aria-label="Search airports">
+        <label for="searchInput" class="visually-hidden">Search airport (e.g. DFW, JFK)</label>
+        <input id="searchInput" name="q" class="search-input"
+               placeholder="Search airport (e.g. DFW, JFK)..." aria-label="Search airport">
+        <button id="searchBtn" class="search-button" type="submit">Search</button>
+      </form>
+
+      <!-- AIRPORT GRID -->
+      <section id="airportGrid" class="grid" role="region" aria-label="Airport status grid">
+        <!-- JS will populate airport cards here -->
+      </section>
+    </main>
+
+    <noscript>
+      <p>Your browser does not support JavaScript or it is disabled. Please enable JavaScript to view the live dashboard.</p>
+    </noscript>
+
+  </div>
+
+  <script src="js/dashboard.js" defer></script>
+</body>
+</html>
